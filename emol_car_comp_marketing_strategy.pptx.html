@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emol Car Comp - Marketing Strategy 2026</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .ppt-slide {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Open Sans', sans-serif;
+            page-break-after: always;
+        }
+        
+        /* Cover Slide */
+        .slide-cover {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 50%, #0d1a2d 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px;
+        }
+        
+        .slide-cover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+        
+        .cover-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 72px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        
+        .cover-subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #f97316;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        
+        .cover-tagline {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-style: italic;
+            color: #f97316;
+            margin-bottom: 60px;
+        }
+        
+        .cover-info {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-top: 40px;
+        }
+        
+        /* Section Divider */
+        .slide-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0a1628 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .section-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 120px;
+            font-weight: 800;
+            color: rgba(249, 115, 22, 0.3);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            z-index: 1;
+            text-transform: uppercase;
+        }
+        
+        /* Content Slides */
+        .slide-content {
+            background: #ffffff;
+            padding: 50px 60px;
+        }
+        
+        .slide-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #f97316;
+        }
+        
+        .slide-header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+        
+        .content-body {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #0f172a;
+        }
+        
+        .content-body p {
+            margin-bottom: 16px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid #f97316;
+            padding: 20px 25px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .highlight-box p {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 22px;
+            color: #78350f;
+            margin: 0;
+        }
+        
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0a1628 100%);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+            color: #f97316;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Two Column Layout */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        
+        .column {
+            padding: 20px;
+        }
+        
+        .column h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f97316;
+        }
+        
+        /* Bullet Points */
+        .bullet-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .bullet-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+        
+        .bullet-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #f97316;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        /* Table Styles */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        
+        .data-table th {
+            background: #1e3a8a;
+            color: #ffffff;
+            padding: 14px;
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        
+        .data-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .data-table tr:nth-child(even) {
+            background: #f8fafc;
+        }
+        
+        /* Process Steps */
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .step {
+            flex: 1;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: #f97316;
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            margin: 0 auto 15px;
+        }
+        
+        .step-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: #1e3a8a;
+            margin-bottom: 8px;
+        }
+        
+        .step-desc {
+            font-size: 13px;
+            color: #475569;
+        }
+        
+        /* Funnel */
+        .funnel-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .funnel-level {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 25px;
+            margin: 5px 0;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        
+        .funnel-level:nth-child(1) { width: 90%; background: #1e3a8a; }
+        .funnel-level:nth-child(2) { width: 75%; background: #2563eb; }
+        .funnel-level:nth-child(3) { width: 60%; background: #3b82f6; }
+        .funnel-level:nth-child(4) { width: 45%; background: #60a5fa; }
+        .funnel-level:nth-child(5) { width: 30%; background: #93c5fd; color: #1e3a8a; }
+        
+        /* Footer */
+        .slide-footer {
+            position: absolute;
+            bottom: 20px;
+            left: 60px;
+            right: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+        
+        .slide-footer .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+        
+        /* Back Cover */
+        .slide-backcover {
+            background: linear-gradient(135deg, #1a2a4a 0%, #0a1628 50%, #0d1a2d 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .backcover-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        
+        .backcover-tagline {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-style: italic;
+            color: #f97316;
+            margin-bottom: 40px;
+        }
+        
+        .backcover-contact {
+            font-size: 18px;
+            color: #94a3b8;
+            line-height: 1.8;
+        }
+        
+        /* Color badges */
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .badge-green { background: #dcfce7; color: #166534; }
+        .badge-yellow { background: #fef9c3; color: #854d0e; }
+        .badge-red { background: #fee2e2; color: #991b1b; }
+        .badge-blue { background: #dbeafe; color: #1e40af; }
+    </style>
+</head>
+<body>
+
+<!-- SLIDE 1: Cover -->
+<div class="ppt-slide slide-cover">
+    <div class="cover-logo">EMOL CAR</div>
+    <div class="cover-subtitle">COMPANY LTD</div>
+    <div class="cover-tagline">"Get Your Car With 30% Deposit - We Drive Rwanda Forward"</div>
+    <div class="cover-info">
+        <p>Premium Marketing Strategy 2026</p>
+        <p>Hybrid Business Model | Digital Marketing Dominance | East Africa Expansion</p>
+        <p style="margin-top: 20px;">Kigali, Rwanda | Confidential | Version 1.0</p>
+    </div>
+</div>
+
+<!-- SLIDE 2: Executive Summary -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Executive Summary</h2>
+    </div>
+    <div class="content-body">
+        <p>Emol Car Company Ltd is not just another car dealership; it is a <strong>Direct Importer & Premium Sales Hub</strong> using technology and "Smart Financing" (30% Deposit) to make it easier for Rwandans to own quality cars at international prices.</p>
+        
+        <div class="highlight-box">
+            <p>"This strategy is not just a document, it is a 'Business Machine'. The secret to winning here is following this path without deviation."</p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">120</div>
+                <div class="stat-label">Cars Year 1</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$1.2M</div>
+                <div class="stat-label">Revenue Year 1</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">800</div>
+                <div class="stat-label">Cars Year 3</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$8M</div>
+                <div class="stat-label">Revenue Year 3</div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 3: Vision & Mission -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Vision & Mission</h2>
+    </div>
+    <div class="content-body">
+        <div class="two-column">
+            <div class="column">
+                <h3>Vision</h3>
+                <p>To transform how people buy cars in Rwanda through <strong>Transparency</strong> and <strong>Speed</strong>.</p>
+                <ul class="bullet-list">
+                    <li>No hidden fees</li>
+                    <li>Clear pricing</li>
+                    <li>Fast delivery (25-40 days)</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Mission</h3>
+                <p>To provide quality cars at fair prices, in an easy way - <strong>everyone can own a car</strong>.</p>
+                <ul class="bullet-list">
+                    <li>30% deposit model</li>
+                    <li>Flexible payment</li>
+                    <li>Trust through contracts</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3 style="margin-top: 30px; color: #1e3a8a; font-family: 'Montserrat', sans-serif;">Value Proposition</h3>
+        <ul class="bullet-list">
+            <li><strong>Transparency:</strong> Clear prices, no hidden fees. We show every detail.</li>
+            <li><strong>Speed:</strong> Delivering cars to customers quickly (Imports in 25-40 days).</li>
+            <li><strong>Flexibility:</strong> "Pay 30% Deposit" model allows many people to order cars.</li>
+            <li><strong>Trust:</strong> Contracts + Video proof + Testimonials = No scams.</li>
+        </ul>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 4: Business Model Overview -->
+<div class="ppt-slide slide-section">
+    <div class="section-number">02</div>
+    <div class="section-title">Business Model<br>(Hybrid System)</div>
+</div>
+
+<!-- SLIDE 5: Pre-order System -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Pre-order System (30% Deposit) - CASH FLOW ENGINE</h2>
+    </div>
+    <div class="content-body">
+        <p style="margin-bottom: 25px;">Emol uses <strong>two complementary methods</strong> - Pre-order and Reselling. This gives us consistent cash flow without holding too much inventory.</p>
+        
+        <h3 style="color: #1e3a8a; font-family: 'Montserrat', sans-serif; margin-bottom: 20px;">How It Works (Step-by-Step)</h3>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-title">Consultation</div>
+                <div class="step-desc">Customer comes on WhatsApp. We listen to what they want and their budget.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-title">Selection</div>
+                <div class="step-desc">Show available cars on Auction (SBT, Be Forward). Proforma Invoice shows all costs.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-title">30% Deposit</div>
+                <div class="step-desc">Customer signs contract, pays 30%. We book the car abroad.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-title">Tracking</div>
+                <div class="step-desc">Manager keeps customer updated: "Car arrived in Dar-es-Salaam."</div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-title">Handover</div>
+                <div class="step-desc">Car arrives in Kigali, customer pays remaining 70%.</div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 6: Car Examples -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Car Examples & Profit Margins</h2>
+    </div>
+    <div class="content-body">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Car Model</th>
+                    <th>CIF (Japan)</th>
+                    <th>30% Deposit</th>
+                    <th>Profit Margin</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Toyota Vitz 2012</strong></td>
+                    <td>$3,500</td>
+                    <td>$1,050</td>
+                    <td><span class="badge badge-green">$400-600</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Toyota Corolla Axio</strong></td>
+                    <td>$5,000</td>
+                    <td>$1,500</td>
+                    <td><span class="badge badge-green">$600-800</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Toyota RAV4 2015</strong></td>
+                    <td>$10,000</td>
+                    <td>$3,000</td>
+                    <td><span class="badge badge-yellow">$1,200-1,500</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Toyota Hilux 2018</strong></td>
+                    <td>$20,000</td>
+                    <td>$6,000</td>
+                    <td><span class="badge badge-red">$2,500-3,000</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3 style="color: #1e3a8a; font-family: 'Montserrat', sans-serif; margin-top: 30px; margin-bottom: 15px;">Reselling Model (Stock Cars) - PROFIT MAXIMIZER</h3>
+        <p>Emol invests its own money, orders popular cars and brings them to Kigali. Customer comes, sees, test drives, and pays immediately.</p>
+        <div class="highlight-box">
+            <p><strong>Example:</strong> Toyota Hilux - Cost: 45M RWF | Selling: 52M RWF | Profit: 7M RWF per unit</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 7: Why This Strategy Wins -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Why This Strategy Wins</h2>
+    </div>
+    <div class="content-body">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Traditional Dealership</th>
+                    <th>Emol Model</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Stock</strong></td>
+                    <td>Cars in yard (High cost)</td>
+                    <td><span class="badge badge-green">Pre-order (Low risk)</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Pricing</strong></td>
+                    <td>Fixed prices</td>
+                    <td><span class="badge badge-green">Transparent CIF + fees</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Payment</strong></td>
+                    <td>Full cash or bank loan</td>
+                    <td><span class="badge badge-green">30% deposit, flexible</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Marketing</strong></td>
+                    <td>Billboards, radio</td>
+                    <td><span class="badge badge-green">Digital, social media</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Trust</strong></td>
+                    <td>Physical presence</td>
+                    <td><span class="badge badge-green">Video proof, contracts</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 8: Target Market Section -->
+<div class="ppt-slide slide-section">
+    <div class="section-number">03</div>
+    <div class="section-title">Target Market<br>& Buyer Personas</div>
+</div>
+
+<!-- SLIDE 9: Buyer Personas -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Buyer Personas</h2>
+    </div>
+    <div class="content-body">
+        <div class="two-column">
+            <div class="column">
+                <h3>The Corporate Professional</h3>
+                <p><strong>Profile:</strong> Works in Banks, NGOs, or Government. Age 28-45.</p>
+                <p><strong>Needs:</strong> Reliable car that doesn't consume too much fuel.</p>
+                <p><strong>Cars:</strong> Toyota Vitz, RAV4, VW Polo</p>
+                <p><strong>Budget:</strong> 7M - 15M RWF</p>
+                <p><strong>Message:</strong> "Drive to work in comfort. Get your first car with flexible payment."</p>
+            </div>
+            <div class="column">
+                <h3>The Business Owner</h3>
+                <p><strong>Profile:</strong> Has their own business, needs a car for work or to show success.</p>
+                <p><strong>Needs:</strong> Strong car or one that shows they have reached a level.</p>
+                <p><strong>Cars:</strong> Toyota Hilux, Fortuner, Mercedes Benz</p>
+                <p><strong>Budget:</strong> 15M - 40M RWF</p>
+                <p><strong>Message:</strong> "Upgrade your business logistics and lifestyle. Premium imports available."</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #f8fafc; border-radius: 8px;">
+            <h3 style="color: #1e3a8a; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;">The Hustler / Ride-Hailing Driver</h3>
+            <p><strong>Profile:</strong> Wants a car to use for taxi (Yego/Bolt) to earn money.</p>
+            <p><strong>Needs:</strong> Affordable, reliable car, spare parts easily available.</p>
+            <p><strong>Cars:</strong> Toyota Corolla, Yaris, Vitz | <strong>Budget:</strong> 8M - 12M RWF</p>
+            <p><strong>Message:</strong> "Start your own transport business today. Invest in a reliable Corolla."</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 10: Market Size -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Market Size & Growth</h2>
+    </div>
+    <div class="content-body">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Market Segment</th>
+                    <th>Size</th>
+                    <th>Growth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rwanda Total Car Sales</td>
+                    <td>15,000 units/year</td>
+                    <td><span class="badge badge-green">12% annually</span></td>
+                </tr>
+                <tr>
+                    <td>Imported Used Cars</td>
+                    <td>8,000 units/year</td>
+                    <td><span class="badge badge-green">15% annually</span></td>
+                </tr>
+                <tr>
+                    <td>Target (Year 1)</td>
+                    <td>120 units</td>
+                    <td><span class="badge badge-blue">0.8% market share</span></td>
+                </tr>
+                <tr>
+                    <td>Target (Year 3)</td>
+                    <td>800 units</td>
+                    <td><span class="badge badge-blue">5% market share</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="stats-grid" style="margin-top: 40px;">
+            <div class="stat-card">
+                <div class="stat-number">15K</div>
+                <div class="stat-label">Total Market</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8K</div>
+                <div class="stat-label">Import Market</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15%</div>
+                <div class="stat-label">Growth Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5%</div>
+                <div class="stat-label">Target Share Y3</div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 11: Digital Marketing Section -->
+<div class="ppt-slide slide-section">
+    <div class="section-number">04</div>
+    <div class="section-title">Digital Marketing<br>Strategy</div>
+</div>
+
+<!-- SLIDE 12: TikTok Strategy -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>TikTok Strategy (The Viral Engine)</h2>
+    </div>
+    <div class="content-body">
+        <p style="margin-bottom: 25px;"><strong>Goal:</strong> Create "Noise" and bring "Leads" to WhatsApp.</p>
+        
+        <div class="two-column">
+            <div class="column">
+                <h3>Content Strategy</h3>
+                <ul class="bullet-list">
+                    <li><strong>Posting:</strong> 3 videos daily (9 AM, 1 PM, 7 PM)</li>
+                    <li><strong>Content:</strong> Price reveals, Before/After, "How to import", Comedy skits</li>
+                    <li><strong>Audio:</strong> Use trending songs but volume at 5%</li>
+                    <li><strong>Hook:</strong> Every video must start within 2 seconds</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Viral Video Examples</h3>
+                <ul class="bullet-list">
+                    <li><strong>Price Reveal:</strong> "Have 6.5M RWF? Here are 3 cars you can take home today."</li>
+                    <li><strong>Education:</strong> "Why is Vitz 2012 cheaper than other models? Here are 3 reasons."</li>
+                    <li><strong>Testimonial:</strong> A respected customer receiving keys in front of the office</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="highlight-box" style="margin-top: 25px;">
+            <p>Example Hook: "Stop! This car is not for everyone." - Capture attention in first 2 seconds</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 13: Instagram & Facebook -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Instagram & Facebook Strategy</h2>
+    </div>
+    <div class="content-body">
+        <div class="two-column">
+            <div class="column">
+                <h3>Instagram (The Luxury Catalog)</h3>
+                <p><strong>Goal:</strong> Show that Emol is a "Premium Brand" not like regular "Brokers".</p>
+                <ul class="bullet-list">
+                    <li><strong>Grid Layout:</strong> Every car must have 3 photos (Front, Back, Profile)</li>
+                    <li><strong>Stories:</strong> 10+ daily showing available cars (Stock updates)</li>
+                    <li><strong>Influencer Tagging:</strong> Give a car to an influencer to drive and tag us</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Facebook Ads (Lead Gen Machine)</h3>
+                <table class="data-table" style="font-size: 14px;">
+                    <thead>
+                        <tr>
+                            <th>Ad Type</th>
+                            <th>Budget</th>
+                            <th>Expected ROI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lead Gen Ads</td>
+                            <td>$200/mo</td>
+                            <td>10-15 leads/day</td>
+                        </tr>
+                        <tr>
+                            <td>Retargeting</td>
+                            <td>$100/mo</td>
+                            <td>3-5 conversions</td>
+                        </tr>
+                        <tr>
+                            <td>Lookalike</td>
+                            <td>$150/mo</td>
+                            <td>5-8 conversions</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <h3 style="color: #1e3a8a; font-family: 'Montserrat', sans-serif; margin-top: 30px; margin-bottom: 15px;">YouTube Strategy (The Trust Builder)</h3>
+        <ul class="bullet-list">
+            <li><strong>Long-form Content:</strong> 8-12 minute video explaining one car in depth</li>
+            <li><strong>SEO Keywords:</strong> "Best Family Car in Rwanda 2026", "How to buy a car in Kigali with 30% deposit"</li>
+            <li><strong>Content Types:</strong> Car reviews, Import vlogs, Maintenance series, Customer interviews</li>
+        </ul>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 14: Marketing Manager Section -->
+<div class="ppt-slide slide-section">
+    <div class="section-number">05</div>
+    <div class="section-title">Marketing Manager<br>Contract</div>
+</div>
+
+<!-- SLIDE 15: Job Description -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Marketing Manager - Job Description</h2>
+    </div>
+    <div class="content-body">
+        <p style="margin-bottom: 25px;">For this business to run well, you need a <strong>skilled Marketing Manager</strong> who is not just an employee, but like a <strong>partner in growth</strong>.</p>
+        
+        <div class="two-column">
+            <div class="column">
+                <h3>A. Social Media Management</h3>
+                <ul class="bullet-list">
+                    <li>TikTok/Instagram/Facebook: Manage all platforms, post daily</li>
+                    <li>Content Creation: Create 3-5 videos daily, editing with CapCut</li>
+                    <li>Community Management: Respond to comments and DMs within 5 minutes</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px;">B. Paid Advertising</h3>
+                <ul class="bullet-list">
+                    <li>Meta Ads: Create and track Facebook/Instagram Ads</li>
+                    <li>Budget Management: Use advertising money wisely (ROI focus)</li>
+                    <li>Optimization: Change ads that don't work, increase budget for those that do</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>C. Lead Generation & Sales</h3>
+                <ul class="bullet-list">
+                    <li>WhatsApp Management: Respond to customers, do follow-ups</li>
+                    <li>CRM Tracking: Record every customer in Google Sheets</li>
+                    <li>Closing Deals: Close sales - get customer to pay deposit</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 16: Salary & Commission -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Salary & Commission Structure</h2>
+    </div>
+    <div class="content-body">
+        <p style="margin-bottom: 20px;">Don't just give a high salary without demanding results. Give <strong>Base Salary + Aggressive Commission</strong> so they are hungry to sell!</p>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Amount</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Base Salary</strong></td>
+                    <td>400,000 RWF/month</td>
+                    <td>Fixed, guaranteed</td>
+                </tr>
+                <tr>
+                    <td><strong>Commission (Pre-order)</strong></td>
+                    <td>150,000 RWF/lead</td>
+                    <td>Per qualified lead</td>
+                </tr>
+                <tr>
+                    <td><strong>Commission (Stock Sale)</strong></td>
+                    <td>2% of sale price</td>
+                    <td>For stock car sales</td>
+                </tr>
+                <tr>
+                    <td><strong>Bonus (Monthly)</strong></td>
+                    <td>100,000 RWF</td>
+                    <td>If sales target met</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="highlight-box" style="margin-top: 25px;">
+            <p><strong>Example Calculation:</strong> If 5 qualified leads come from TikTok in a month, they get Base Salary 400k + (5 x 150k) = <strong>1,150,000 RWF</strong></p>
+        </div>
+        <p style="font-style: italic; color: #475569; margin-top: 10px;">This makes them work hard to find customers!</p>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 17: Communication Protocol -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Communication Protocol & Schedule</h2>
+    </div>
+    <div class="content-body">
+        <div class="two-column">
+            <div class="column">
+                <h3>Daily Sync (Every Day)</h3>
+                <p>WhatsApp message in morning (8:00 AM):</p>
+                <div class="highlight-box">
+                    <p>"Today we will release 2 Vitz videos, and I am talking to 5 leads from yesterday."</p>
+                </div>
+                
+                <h3 style="margin-top: 20px;">Monthly Strategy Meeting</h3>
+                <p>Face-to-face meeting on the 1st of each month. Review:</p>
+                <ul class="bullet-list">
+                    <li>What went well</li>
+                    <li>Mistakes to avoid</li>
+                    <li>Cars to focus on</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Weekly CRM Report (Every Friday)</h3>
+                <table class="data-table" style="font-size: 14px;">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>This Week</th>
+                            <th>Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Leads Generated</td>
+                            <td>45</td>
+                            <td><span class="badge badge-green">+18%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Leads Qualified</td>
+                            <td>28</td>
+                            <td><span class="badge badge-green">+27%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Deposits Received</td>
+                            <td>5</td>
+                            <td><span class="badge badge-green">+25%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Revenue</td>
+                            <td>$15,000</td>
+                            <td><span class="badge badge-green">+25%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 18: Daily Work Schedule -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Daily Work Schedule</h2>
+    </div>
+    <div class="content-body">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>8:00 AM</strong></td>
+                    <td>Check messages, respond to overnight leads</td>
+                </tr>
+                <tr>
+                    <td><strong>8:30 AM</strong></td>
+                    <td>Post morning TikTok/Instagram content</td>
+                </tr>
+                <tr>
+                    <td><strong>9:00 AM</strong></td>
+                    <td>Check ad performance, adjust if needed</td>
+                </tr>
+                <tr>
+                    <td><strong>10:00 AM</strong></td>
+                    <td>Follow up with leads (WhatsApp calls)</td>
+                </tr>
+                <tr>
+                    <td><strong>12:00 PM</strong></td>
+                    <td>Lunch break</td>
+                </tr>
+                <tr>
+                    <td><strong>1:00 PM</strong></td>
+                    <td>Create afternoon content (video shoot)</td>
+                </tr>
+                <tr>
+                    <td><strong>2:00 PM</strong></td>
+                    <td>Post afternoon content</td>
+                </tr>
+                <tr>
+                    <td><strong>3:00 PM</strong></td>
+                    <td>Client meetings/calls</td>
+                </tr>
+                <tr>
+                    <td><strong>5:00 PM</strong></td>
+                    <td>Update CRM, prepare tomorrow's content</td>
+                </tr>
+                <tr>
+                    <td><strong>6:00 PM</strong></td>
+                    <td>Post evening content, final checks</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 19: Sales Funnel Section -->
+<div class="ppt-slide slide-section">
+    <div class="section-number">06</div>
+    <div class="section-title">Sales Funnel<br>& WhatsApp System</div>
+</div>
+
+<!-- SLIDE 20: The 6-Step Sales Funnel -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>The 6-Step Sales Funnel</h2>
+    </div>
+    <div class="content-body">
+        <p style="margin-bottom: 20px;">Here is how someone goes from not knowing you to paying $15,000:</p>
+        
+        <div class="funnel-container">
+            <div class="funnel-level">
+                <span>1. Awareness</span>
+                <span>TikTok video reaches 10,000 people (100%)</span>
+            </div>
+            <div class="funnel-level">
+                <span>2. Interest</span>
+                <span>500 click to WhatsApp link (5%)</span>
+            </div>
+            <div class="funnel-level">
+                <span>3. Consideration</span>
+                <span>100 qualified leads (budget confirmed) (20%)</span>
+            </div>
+            <div class="funnel-level">
+                <span>4. Intent</span>
+                <span>30 request invoices/proposals (30%)</span>
+            </div>
+            <div class="funnel-level">
+                <span>5. Purchase</span>
+                <span>10 pay 30% deposit (33%)</span>
+            </div>
+        </div>
+        
+        <div class="highlight-box" style="margin-top: 25px;">
+            <p><strong>Key Insight:</strong> From 10,000 viewers, we convert 10 to paying customers (0.1% conversion rate). This is industry standard for high-ticket items.</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 21: WhatsApp System -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>WhatsApp Auto-Reply & Qualification</h2>
+    </div>
+    <div class="content-body">
+        <h3 style="color: #1e3a8a; font-family: 'Montserrat', sans-serif; margin-bottom: 15px;">First Contact (Auto-Reply)</h3>
+        <div class="highlight-box">
+            <p>Hello! Thank you for choosing Emol Car Company. Which car do you want? - Toyota Vitz? - Corolla? - RAV4? - Hilux? - Other? Write: 1. Your budget 2. Year preference 3. When you want it We can help you get it in 25-40 days!</p>
+        </div>
+        
+        <h3 style="color: #1e3a8a; font-family: 'Montserrat', sans-serif; margin-top: 25px; margin-bottom: 15px;">Qualification Questions</h3>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-title">Budget</div>
+                <div class="step-desc">Filter out those with little money</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-title">Timeline</div>
+                <div class="step-desc">When do you need the car?</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-title">Purpose</div>
+                <div class="step-desc">Personal/Uber/Business?</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-title">Experience</div>
+                <div class="step-desc">Have you imported before?</div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 22: Closing Scripts -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Closing Scripts</h2>
+    </div>
+    <div class="content-body">
+        <div class="two-column">
+            <div class="column">
+                <h3>Script 1: The Urgency Close</h3>
+                <div class="highlight-box">
+                    <p>"This car is available now! You can see it with just 30% deposit (X RWF), and we will bring it quickly. Two others also want it, do you want us to reserve your slot today?"</p>
+                </div>
+                
+                <h3 style="margin-top: 20px;">Script 2: Handling Objections</h3>
+                <div class="highlight-box">
+                    <p>"I understand your concern. But remember our cars come with warranty, have passed 100% inspection, and we help with all documentation. Which car did you like so we can see how to make payment easier?"</p>
+                </div>
+            </div>
+            <div class="column">
+                <h3>Script 3: B2B Corporate Approach</h3>
+                <div class="highlight-box">
+                    <p>"We help companies get work cars (Fleet) at international prices, saving you the stress of dealing with customs. Can we talk this Friday?"</p>
+                </div>
+                
+                <h3 style="margin-top: 20px;">Follow-Up Sequence</h3>
+                <table class="data-table" style="font-size: 14px;">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Message Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Day 1</td>
+                            <td>Thank you message</td>
+                        </tr>
+                        <tr>
+                            <td>Day 2</td>
+                            <td>Value add (new car)</td>
+                        </tr>
+                        <tr>
+                            <td>Day 3</td>
+                            <td>Urgency (others interested)</td>
+                        </tr>
+                        <tr>
+                            <td>Day 5</td>
+                            <td>Final attempt</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 23: Budget Section -->
+<div class="ppt-slide slide-section">
+    <div class="section-number">07</div>
+    <div class="section-title">Budget &<br>Financial Projections</div>
+</div>
+
+<!-- SLIDE 24: Monthly Marketing Budget -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Monthly Marketing Budget</h2>
+    </div>
+    <div class="content-body">
+        <p style="margin-bottom: 20px;">To make millions, you must invest money that works (ROI - Return on Investment).</p>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Monthly Budget</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Facebook/Instagram Ads</td>
+                    <td>$450 (450K RWF)</td>
+                    <td><span class="badge badge-red">HIGH</span></td>
+                </tr>
+                <tr>
+                    <td>TikTok Content Creation</td>
+                    <td>$150 (150K RWF)</td>
+                    <td><span class="badge badge-red">HIGH</span></td>
+                </tr>
+                <tr>
+                    <td>Influencer Partnerships</td>
+                    <td>$200 (200K RWF)</td>
+                    <td><span class="badge badge-yellow">MEDIUM</span></td>
+                </tr>
+                <tr>
+                    <td>YouTube Production</td>
+                    <td>$100 (100K RWF)</td>
+                    <td><span class="badge badge-yellow">MEDIUM</span></td>
+                </tr>
+                <tr>
+                    <td>WhatsApp Business Tools</td>
+                    <td>$50 (50K RWF)</td>
+                    <td><span class="badge badge-green">LOW</span></td>
+                </tr>
+                <tr>
+                    <td>CRM Software</td>
+                    <td>$50 (50K RWF)</td>
+                    <td><span class="badge badge-green">LOW</span></td>
+                </tr>
+                <tr style="background: #1e3a8a; color: white;">
+                    <td><strong>TOTAL</strong></td>
+                    <td><strong>$1,000 (1M RWF)</strong></td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="highlight-box" style="margin-top: 20px;">
+            <p><strong>Note:</strong> This 1.5M RWF can return multiplied 10 times (15M+ RWF) if it sells at least 5 cars with $1,000 profit each.</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 25: Revenue Projections -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Revenue & 3-Year Financial Plan</h2>
+    </div>
+    <div class="content-body">
+        <div class="two-column">
+            <div class="column">
+                <h3>Revenue Projections</h3>
+                <table class="data-table" style="font-size: 14px;">
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Cars</th>
+                            <th>Revenue</th>
+                            <th>Profit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Month 1</td>
+                            <td>5</td>
+                            <td>$60K</td>
+                            <td>$8K</td>
+                        </tr>
+                        <tr>
+                            <td>Month 3</td>
+                            <td>10</td>
+                            <td>$120K</td>
+                            <td>$16K</td>
+                        </tr>
+                        <tr>
+                            <td>Month 6</td>
+                            <td>15</td>
+                            <td>$180K</td>
+                            <td>$24K</td>
+                        </tr>
+                        <tr>
+                            <td>Month 12</td>
+                            <td>20</td>
+                            <td>$240K</td>
+                            <td>$32K</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="column">
+                <h3>3-Year Financial Plan</h3>
+                <table class="data-table" style="font-size: 14px;">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Cars</th>
+                            <th>Revenue</th>
+                            <th>Profit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Year 1</td>
+                            <td>120</td>
+                            <td>$1.2M</td>
+                            <td>$180K</td>
+                        </tr>
+                        <tr>
+                            <td>Year 2</td>
+                            <td>350</td>
+                            <td>$3.5M</td>
+                            <td>$525K</td>
+                        </tr>
+                        <tr>
+                            <td>Year 3</td>
+                            <td>800</td>
+                            <td>$8M</td>
+                            <td>$1.2M</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="stats-grid" style="margin-top: 30px;">
+            <div class="stat-card">
+                <div class="stat-number">$1.2M</div>
+                <div class="stat-label">Year 1 Revenue</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$3.5M</div>
+                <div class="stat-label">Year 2 Revenue</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$8M</div>
+                <div class="stat-label">Year 3 Revenue</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15</div>
+                <div class="stat-label">Team Size Y3</div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 26: Timeline Section -->
+<div class="ppt-slide slide-section">
+    <div class="section-number">08</div>
+    <div class="section-title">Timeline &<br>Action Plan</div>
+</div>
+
+<!-- SLIDE 27: First 90 Days -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>First 90 Days</h2>
+    </div>
+    <div class="content-body">
+        <div class="two-column">
+            <div class="column">
+                <h3>Month 1: Foundation & Setup</h3>
+                <ul class="bullet-list">
+                    <li><strong>Week 1:</strong> Hire and onboard Marketing Manager. Create Website. Open all social accounts.</li>
+                    <li><strong>Week 2:</strong> Photoshoot of cars. Start posting 3 videos/day on TikTok.</li>
+                    <li><strong>Week 3:</strong> Start Facebook Ads ($5/day). Build customer database.</li>
+                    <li><strong>Week 4:</strong> Target: Sell first 2 cars. Review & adjust.</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px;">Month 2: Growth & Scaling</h3>
+                <ul class="bullet-list">
+                    <li><strong>Week 5-6:</strong> Increase ad budget ($10/day). Partner with influencers.</li>
+                    <li><strong>Week 7-8:</strong> Get first pre-order customers. Increase car variety. Target: 5 cars.</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Month 3: Optimization</h3>
+                <ul class="bullet-list">
+                    <li><strong>Week 9-10:</strong> Analyze results. Which ads brought the most people?</li>
+                    <li><strong>Week 11-12:</strong> Increase budget where it worked. Partner with Banks (Car Loans). Target: 10 cars.</li>
+                </ul>
+                
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <p><strong>90-Day Target:</strong> Sell 10 cars, build 50K social following, establish brand presence in Kigali.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 28: Full Year Timeline -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Full Year Gantt Timeline</h2>
+    </div>
+    <div class="content-body">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Activity</th>
+                    <th>Q1</th>
+                    <th>Q2</th>
+                    <th>Q3</th>
+                    <th>Q4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Social Media Setup</strong></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td><strong>Content Production</strong></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Paid Advertising</strong></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Influencer Campaigns</strong></td>
+                    <td>-</td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                </tr>
+                <tr>
+                    <td><strong>YouTube Channel</strong></td>
+                    <td>-</td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Bank Partnerships</strong></td>
+                    <td>-</td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td><strong>Expansion Planning</strong></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                    <td><span class="badge badge-blue">ACTIVE</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 29: East Africa Expansion -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>East Africa Expansion (Year 2)</h2>
+    </div>
+    <div class="content-body">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Market Size</th>
+                    <th>Entry Strategy</th>
+                    <th>Timeline</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Uganda</strong></td>
+                    <td>25,000 cars/year</td>
+                    <td>Partner with local dealer</td>
+                    <td>Q2 Year 2</td>
+                </tr>
+                <tr>
+                    <td><strong>Tanzania</strong></td>
+                    <td>40,000 cars/year</td>
+                    <td>Open office in Dar</td>
+                    <td>Q4 Year 2</td>
+                </tr>
+                <tr>
+                    <td><strong>Kenya</strong></td>
+                    <td>100,000 cars/year</td>
+                    <td>Franchise model</td>
+                    <td>Year 3</td>
+                </tr>
+                <tr>
+                    <td><strong>Burundi</strong></td>
+                    <td>5,000 cars/year</td>
+                    <td>Online only</td>
+                    <td>Year 3</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="stats-grid" style="margin-top: 30px;">
+            <div class="stat-card">
+                <div class="stat-number">170K</div>
+                <div class="stat-label">Total Market Size</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Countries Target</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$3.5M</div>
+                <div class="stat-label">Year 2 Revenue</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">350</div>
+                <div class="stat-label">Cars Year 2</div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 30: Risk Management Section -->
+<div class="ppt-slide slide-section">
+    <div class="section-number">09</div>
+    <div class="section-title">Risk Management<br>& KPIs</div>
+</div>
+
+<!-- SLIDE 31: Risk Register -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Risk Register</h2>
+    </div>
+    <div class="content-body">
+        <p style="margin-bottom: 20px;">This is what makes a business professional - seeing problems before they happen.</p>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Risk</th>
+                    <th>Probability</th>
+                    <th>Impact</th>
+                    <th>Mitigation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Low initial sales</td>
+                    <td><span class="badge badge-yellow">Medium</span></td>
+                    <td><span class="badge badge-red">High</span></td>
+                    <td>Start with brokerage model</td>
+                </tr>
+                <tr>
+                    <td>Supplier delays</td>
+                    <td><span class="badge badge-green">Low</span></td>
+                    <td><span class="badge badge-yellow">Medium</span></td>
+                    <td>Multiple supplier contracts</td>
+                </tr>
+                <tr>
+                    <td>Cash flow issues</td>
+                    <td><span class="badge badge-yellow">Medium</span></td>
+                    <td><span class="badge badge-red">High</span></td>
+                    <td>30% deposit requirement</td>
+                </tr>
+                <tr>
+                    <td>Competitor response</td>
+                    <td><span class="badge badge-red">High</span></td>
+                    <td><span class="badge badge-yellow">Medium</span></td>
+                    <td>Unique value proposition</td>
+                </tr>
+                <tr>
+                    <td>Regulatory changes</td>
+                    <td><span class="badge badge-green">Low</span></td>
+                    <td><span class="badge badge-red">High</span></td>
+                    <td>Legal compliance team</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 32: Success Metrics (KPIs) -->
+<div class="ppt-slide slide-content">
+    <div class="slide-header">
+        <h2>Success Metrics (KPIs)</h2>
+    </div>
+    <div class="content-body">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>KPI</th>
+                    <th>Target</th>
+                    <th>Measurement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Lead Conversion Rate</strong></td>
+                    <td>20%</td>
+                    <td>Leads to deposits</td>
+                </tr>
+                <tr>
+                    <td><strong>Customer Acquisition Cost</strong></td>
+                    <td>&lt;$50</td>
+                    <td>Marketing spend / customers</td>
+                </tr>
+                <tr>
+                    <td><strong>Average Deal Size</strong></td>
+                    <td>$12,000</td>
+                    <td>Revenue / cars sold</td>
+                </tr>
+                <tr>
+                    <td><strong>Customer Satisfaction</strong></td>
+                    <td>&gt;90%</td>
+                    <td>Post-purchase survey</td>
+                </tr>
+                <tr>
+                    <td><strong>Social Media Growth</strong></td>
+                    <td>+10%/month</td>
+                    <td>Follower increase</td>
+                </tr>
+                <tr>
+                    <td><strong>Return on Ad Spend (ROAS)</strong></td>
+                    <td>&gt;5x</td>
+                    <td>Revenue / ad spend</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="highlight-box" style="margin-top: 25px;">
+            <p>"Emol Car Comp is now ready to dominate the Rwandan Automotive Market!"</p>
+        </div>
+    </div>
+    <div class="slide-footer">
+        <span class="logo">EMOL CAR COMPANY LTD</span>
+        <span>Marketing Strategy 2026</span>
+    </div>
+</div>
+
+<!-- SLIDE 33: Back Cover -->
+<div class="ppt-slide slide-backcover">
+    <div class="backcover-title">EMOL CAR COMPANY LTD</div>
+    <div class="backcover-tagline">"We Drive Rwanda Forward"</div>
+    <div class="backcover-contact">
+        <p>Kigali, Rwanda</p>
+        <p>info@emolcar.rw | +250 7XX XXX XXX</p>
+        <p style="margin-top: 30px; font-size: 14px;">© 2026 Emol Car Company Ltd. All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>
